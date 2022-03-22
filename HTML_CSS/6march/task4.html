@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>task 4 - animation</title>
+    <style>
+        div {
+            position: relative;
+            border: 2px solid ;
+            background-color: navy;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: ping 2s ease-in infinite ;;
+        }
+        @keyframes ping {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            50% {
+                top:0;
+                left:250px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gtid task</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 10px;
+            background-color: darkslateblue;
+            height: 500px;
+        }
+
+        div {
+            background-color: navy;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .item1 {
+            background-color: gray;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .item4 {
+            background-color: maroon;
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div></div>
+        <div></div>
+        <div class="item4"></div>
+    </div>
+</body>
+</html>

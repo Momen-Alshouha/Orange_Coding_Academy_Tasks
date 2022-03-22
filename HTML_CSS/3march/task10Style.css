@@ -1,0 +1,29 @@
+body {
+    background-color: #EEE;
+}
+
+.ipsum {
+    padding: 2px;
+    background-color: aqua;
+}
+
+.quis {
+    padding: 2px;
+    background-color: brown;
+}
+
+div {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+#div3 , .par3 {
+    border: 3px dotted red;
+    padding: 10px;
+}
+
+.purpPar {
+    color: violet;
+}

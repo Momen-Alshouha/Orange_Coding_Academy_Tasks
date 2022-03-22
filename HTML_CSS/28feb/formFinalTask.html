@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        caption,tr,td {
+            font-weight: bold;
+        }
+        td{
+            padding: 5px;
+            border: 1px solid black;
+
+        }
+        div{
+            padding: 5px;
+            padding-bottom: 15px;
+            border: 1px solid black;
+            width: 600px;
+        }
+    </style>
+    <title>Form FinalTask</title>
+</head>
+<body>
+   <div>
+    <table style="width: 600px; height: 450px;">
+        <caption>Assingment 1</caption>
+        <tr> 
+            <td rowspan="3">Student</td>
+            <td>name</td>
+            <td>hashem</td>
+            <td rowspan="3"><a href="#">test.com</a><br>
+            <img width="200px" height="200px" src="https://media.istockphoto.com/vectors/smiley-yellow-icon-vector-emoticon-happy-face-vector-id1008981914?k=20&m=1008981914&s=612x612&w=0&h=0S2lo73Og3tDhK3STXBZv7vPGy39YNTVnpg1Wi1MidY=" alt=""></td>
+        </tr> 
+        <tr>
+            <td>Email </td>
+            <td><a href="#example@gmail.com">example@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>ID </td>
+            <td>202020201</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Courses: </td>
+            <td colspan="3"> <pre>1- programming languages: 
+C+, c#, python. 
+
+2- math:
+calculas 1, calculas 2.</pre></td>
+        </tr>
+       
+    </table>
+    <hr>
+    <form action="">
+        <h1>Create new email : </h1>
+        <p>This form is to create new e-mail for zarqa university: </p>
+        <label for="firstName">first name: </label>
+        <input type="text" name="firstName" id="firstName"> <br><br>
+        <label for="lastName">last name: </label>
+        <input type="text" name="lastName" id="lastName"> <br><br>
+        <label for="email">user name: </label>
+        <input required placeholder="example@gmail.com" type="email" name="email" id="email"> <br><br>
+        <label for="password">password: </label>
+        <input required  type="password" name="password" id="password"> <br><br>
+        <label for="birthDate">Birth Date : </label>
+        <input type="date" name="birthdate" id="birthDate"><br><br>
+        <label for="mobile">mobile number</label>
+        <input type="text" name="mobileNumber" id="mobile" placeholder="0096277..."><br><br>
+        <label for="gender">gender: </label>
+        <select name="gender" id="">
+            <option selected value="male">male</option>
+            <option value="female">female</option>
+        </select><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        
+    </form>
+   </div>
+</body>
+</html>
