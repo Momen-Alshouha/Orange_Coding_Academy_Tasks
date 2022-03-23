@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK 2</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+    </style>
+
+    <script>
+        function changeColor() {
+            var color = this.style.backgroundColor;
+            var newcolor;
+            switch (color) {
+                case "red":
+                    newcolor = "green";
+                    break;
+                case "green":
+                    newcolor = "blue";
+                    break;
+                case "blue":
+                    newcolor = "red";
+                    break;
+            }
+            this.style.backgroundColor = newcolor;
+        }
+
+        function init() {
+            var mydiv = document.getElementById("mydiv");
+            mydiv.style.backgroundColor = "blue";
+            mydiv.onclick = changeColor;
+        }
+
+        window.onload = init;
+    </script>
+</head>
+<body>
+    <div id="mydiv"></div>
+</body>
+</html>
