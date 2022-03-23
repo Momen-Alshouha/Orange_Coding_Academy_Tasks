@@ -32,7 +32,14 @@
 Sample numbers : 3, -7, 2 
 Output : The sign is - */
 /******* Start Your Code *********/
-  
+function signOfproduct(num1 ,num2, num3){
+    let multi=num1*num2*num3;
+    if(multi<0){
+        alert('-');
+    }
+    
+    else alert("+");
+}
 
 
  /******* End Your Code ********* */
