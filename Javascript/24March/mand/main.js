@@ -33,6 +33,8 @@ var persons = [
   { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 ,favFood:["Mansaf","Kabseh","Ozi"], favMovie:["Final distinatin 1","Final distinatin 1","Final distinatin 1"] }
 ];
 
+/******************************************************************************************************** */
+
 /*
 2
 Using the varabile persons
@@ -50,6 +52,7 @@ function firstNames(persons){
 }
 
 
+/******************************************************************************************************** */
 /*
 3
 Using the varabile persons
@@ -69,6 +72,7 @@ function calcAvg(persons){
 
 calcAvg(persons);
 
+/******************************************************************************************************** */
 /*
 4
 Using the varabile persons
@@ -96,6 +100,7 @@ olderPerson(persons);
 
 
 
+/******************************************************************************************************** */
 /*
 5
 Using the varabile persons
@@ -120,6 +125,7 @@ function longestName(persons){
 }
 
 
+/******************************************************************************************************** */
 //////////////////////////////////////////////////////////////////
 
 /*
@@ -168,6 +174,7 @@ function repeatWord(text) {
 
 repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO");
 
+/******************************************************************************************************** */
 /*
 8
 Create a function called repeatChar
@@ -203,6 +210,7 @@ function repeatWord(text) {
 
 repeatWord("mamababatetacedo");
 
+/******************************************************************************************************** */
 /*
 9
 Create a function called selectFromObject
