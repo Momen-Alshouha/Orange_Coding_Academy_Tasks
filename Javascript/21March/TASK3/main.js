@@ -109,6 +109,7 @@ Ex: sum2(3, 6); => 3 + 4 + 5 + 6 => 18
 function sum2(a,b){
     return a+b;
 }
+
 /*********************************************************************************** */
 /*
 5
@@ -151,6 +152,7 @@ function multiOf(num1,num2,num3) {
     res=Math.pow(res,num3);
     return res;
 }
+
 /*********************************************************************************** */
 /*
 7
@@ -170,6 +172,7 @@ while(start<=end){
     start++;
 }
 console.log(res2);
+
 /*********************************************************************************** */
 
 /*
@@ -233,6 +236,7 @@ function CountDown(number){
     }
 
 }
+
 /*********************************************************************************** */
 /*
 10
@@ -312,10 +316,6 @@ function repeatChar(str , character){
 /*********************************************************************************** */
 
 
-
-
-
-
 // Advanced Part {for your benefits}
 
 // Dont solve any question here if you didnt 
@@ -342,6 +342,11 @@ n:        0 1 2 3 4 5  6  7
 */
 
 
+
+
+
+/****************************************************************************************************** */
+
 /*
 2
 Write a function called mirror
@@ -356,6 +361,19 @@ mirror("maDrasa") => "asarDam"
 */
 
 
+function mirror(str){
+    let reversedStr="";
+    for(let i =str.length-1;i>=0;i-- ) {
+        reversedStr+=str[i];
+    }
+    return reversedStr;
+}
+
+console.log(mirror("school"));
+
+
+
+/******************************************************************************************** */
 
 /*
 3
@@ -371,8 +389,25 @@ mirrorCaseAlso("THOR") => "roht"
 mirrorCaseAlso("BaBa") => "AbAb"
 */
 
+function mirrorCaseAlso(str){
+    let newStr="";
+    for(let i=str.length-1; i>=0; i--) {
+        if(str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122 ) {
+            newStr+=(str[i].toUpperCase());
+            
+        }
+        else if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90) {
+            newStr+=(str[i].toLowerCase());
+        }
+    }
+    return newStr;
+}
+
+console.log(mirrorCaseAlso("sChOol"));
 
 
+
+/********************************************************************************************** */
 /*
 4
 Write a function called repeatChar2
@@ -389,6 +424,16 @@ repeatChar2("School","S") => 1
 try more case by yourself
 */
 
+function repeatChar(str, character){
+    let counter=0;
+    for(let i=0;i<str.length; i++){
+        if(str[i]===character)
+        counter++;
+    }
+    return counter;
+}
+
+console.log(repeatChar("schoOl",'o'));
 
 /*
 5
@@ -410,7 +455,5 @@ hi 4 Now Pleas Say Hello To 1, 2 and 3
 hi 5 Now Pleas Say Hello To 1, 2, 3 and 4
 hi 6 Now Pleas Say Hello To 1, 2, 3, 4 and 5
 hi 7 Now Pleas Say Hello To 1, 2, 3, 4, 5 and 6
+
 */
-
-
-
