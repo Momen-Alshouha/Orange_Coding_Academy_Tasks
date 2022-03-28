@@ -277,7 +277,7 @@ function remainderCalc(num,divisor)
 
 
 
-function mod2(num1,num2){
+function mod2(num1,num2) {
     return num1 % num2;
 }
 
@@ -437,6 +437,7 @@ console.log(repeatChar("schoOl",'o'));
 
 /*
 5
+
 Create a function called HiSayHelloTo
 that takes 1 parameter a number that represent
 the nubmer of people come to an event,
