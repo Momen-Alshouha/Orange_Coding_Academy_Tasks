@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Program</title>
+</head>
+<body>
+   <!-- 1 -->
+   <h1>exercice 1</h1>
+   <?php 
+   $year = 2000;
+   if($year % 4 ==0 && $year%100!=0 || $year %400==0) {
+       echo "Leap yaer!";
+   }
+   else {
+       echo "Not leap year!";
+   }
+   ?>
+   <hr>
+
+
+   <!-- 2 -->
+   <h1>exercice 2</h1>
+   <?php
+   $tempreture = 10;
+   if($tempreture >20) {
+       echo "summer";
+   }
+   else {
+       echo "winter";
+   }
+   
+   ?>
+   <hr>
+
+
+
+   <!-- 3 -->
+   <h1>exercice 3</h1>
+   <?php
+   $num1=2;
+   $num2=2;
+   if($num1==$num2){
+       echo ($num1 +$num2)*3;
+   }
+   else {
+       echo $num1+$num2;
+   }
+   ?>
+
+
+   <hr>
+
+
+
+   <!-- 4 -->
+   <h1>exercice 4</h1>
+   <?php
+   $num1=15;
+   $num2=1;
+   if($num1+$num2==30){
+       echo 30;
+   }
+   else {
+       echo var_dump(false);
+   }
+   ?>
+
+   <hr>
+
+
+
+   <!-- 5 -->
+   <h1>exercice 5</h1>
+
+   <?php
+   $num1=20;
+   if($num1 %3==0){
+       echo var_dump(true);
+   }
+   else {
+       echo var_dump(false);
+   }
+   ?>
+
+
+   <hr>
+
+
+
+   <!-- 6 -->
+   <h1>exercice 6</h1>
+   <?php
+   $number=20;
+   echo ($number>=20 && $number<=20)?var_dump(true):var_dump(false);
+   ?>
+   <hr>
+
+
+
+   <!-- 7 -->
+   <h1>exercice 7</h1>
+
+   <?php 
+   $num1=50;
+   $num2=20;
+   $num3=10;
+
+   if($num1>$num2 && $num1>$num3) {
+       echo $num1;
+   }
+   else if($num2>$num3) {
+       echo $num2;
+   }
+   else {
+       echo $num3;
+   }
+   
+   ?>
+   <hr>
+
+
+
+   <!-- 8 -->
+   <h1>exercice 8</h1>
+   <?php 
+   $units=100;
+
+   if($units>250) {
+       echo $units*7.5;
+   }
+
+   if($units>200) {
+    echo $units*6.2;
+    }
+
+    if($units>100) {
+        echo $units*5;
+    }
+
+    if($units>0) {
+    echo $units*2.5; 
+    }
+
+    else {
+        echo 'Wrong Entry!';
+    }
+
+   ?>
+
+
+   <hr>
+
+
+   <!-- 9 -->
+   <h1>exercice 9</h1>
+   <?php 
+    $age = 20;
+    if($age>=18) {
+        echo 'eligible to vote';
+    }
+    else {
+        echo'no eligible to vote';
+    }
+   ?>
+
+
+   <hr>
+
+
+   <!-- 10 -->
+   <h1>exercice 10</h1>
+
+   <?php 
+    $numb = 0;
+    if($numb>0) {
+        echo 'positive';
+    }
+    else if($numb<0){
+        echo 'negative';
+    }
+    else {
+        echo 'zero';
+    }
+
+   ?>
+
+
+   <hr>
+
+
+
+   <!-- 11 -->
+   <h1>exercice 11</h1>
+   <?php 
+    $number1=10;
+    $number2=20;
+    $operation ='/';
+    if($operation=='+'){
+     echo $number1 + $number2;   
+    }
+
+    if($operation=='*') {
+        echo $number1 *$number2;   
+    }
+
+    if($operation=='/'){
+        echo $number1 / $number2;   
+    }
+
+    if($operation=='-'){
+        echo $number1 -$number2  ; 
+       }
+     
+   ?>
+
+
+
+   <hr>
+
+
+   <!-- 12 -->
+   <h1>exercice 12</h1>
+
+   <?php
+    $marks = [60,86,95,63,55,74,79,62,50];
+    $length=count($marks);
+    $sum=0;
+
+    for($counter=0; $counter<$length;$counter++) {
+        $sum+=$marks[$counter];
+    }
+    $avg = $sum/$length;
+    
+    if($avg>100 || $avg <0){
+        echo 'Wrong Entry!';
+    }
+    else {
+        if($avg>=90) {
+            echo "A";
+        }
+        if($avg>=80) {
+            echo "B";
+        }
+        if($avg>=70) {
+            echo "C";
+        }
+        if($avg>=60) {
+            echo "D";
+        }
+        else {
+            echo 'F';
+        }
+    }
+   ?>
+   
+<hr>
+</body>
+</html>
