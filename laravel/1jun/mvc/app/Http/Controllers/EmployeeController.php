@@ -12,8 +12,7 @@ class EmployeeController extends Controller
        return view('employees',compact('data'));
     }
 
-    public function get_single_emp(){
-        $id = request('id');
+    public function get_single_emp($id){
         $data = Employee::where('id', $id)->first();
         return view('employeeId', compact('data'));
      }
