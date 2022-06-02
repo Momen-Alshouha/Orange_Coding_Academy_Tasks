@@ -17,12 +17,12 @@
 </head>
 
 <body class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
-<table class="table">
+<table class="table table-success table-striped">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">email</th>
     </tr>
   </thead>
   <tbody>

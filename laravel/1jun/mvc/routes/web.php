@@ -12,3 +12,4 @@ Route::get('/Employees', [EmployeeController::class, 'get_all_emps']);
 
 Route::get('/EmployeeId', [EmployeeController::class ,'get_single_emp']);
 
+
