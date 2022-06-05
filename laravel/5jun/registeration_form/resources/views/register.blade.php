@@ -41,22 +41,22 @@
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
             <div class="card-body p-4 p-md-5">
                 <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
-                <form method="POST" action="">
+                <form method="POST" action='register'>
                     @csrf
                 <div class="row">
                     <div class="col-md-6 mb-4">
 
                     <div class="form-outline">
-                        <input type="text" id="firstName" class="form-control form-control-lg" />
-                        <label class="form-label" for="firstName">First Name</label>
+                        <input required name="firstname" type="text" id="firstname" class="form-control form-control-lg" />
+                        <label class="form-label" for="firstname">First Name</label>
                     </div>
 
                     </div>
                     <div class="col-md-6 mb-4">
 
                     <div class="form-outline">
-                        <input type="text" id="lastName" class="form-control form-control-lg" />
-                        <label class="form-label" for="lastName">Last Name</label>
+                        <input required name="lastname" type="text" id="lastname" class="form-control form-control-lg" />
+                        <label class="form-label" for="lastname">Last Name</label>
                     </div>
 
                     </div>
@@ -66,7 +66,7 @@
                     <div class="col-md-6 mb-4 pb-2">
 
                     <div class="form-outline">
-                        <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                        <input required name="email" type="email" id="emailAddress" class="form-control form-control-lg" />
                         <label class="form-label" for="emailAddress">Email</label>
                     </div>
 
@@ -74,7 +74,7 @@
                     <div class="col-md-6 mb-4 pb-2">
 
                     <div class="form-outline">
-                        <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                        <input required name="phonenumber" type="tel" id="phoneNumber" class="form-control form-control-lg" />
                         <label class="form-label" for="phoneNumber">Phone Number</label>
                     </div>
 
@@ -82,16 +82,16 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                 <div class="form-outline">
-                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
-                    <label class="form-label" for="phoneNumber">password</label>
+                    <input required name="password" type="password" id="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">password</label>
                 </div>
 
             </div>
             <div class="col-md-6 mb-4 pb-2">
 
             <div class="form-outline">
-                <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
-                <label class="form-label" for="phoneNumber">confirm password</label>
+                <input required name="confirmpassword" type="password" id="confirmpass" class="form-control form-control-lg" />
+                <label class="form-label" for="confirmpass">confirm password</label>
             </div>
 
                     </div>
