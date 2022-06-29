@@ -2,7 +2,8 @@ import React from "react";
 
 class ClassComponent extends React.Component {
   constructor(props) {
-    super(props);
+    super();
+    console.log(props.name);
     this.state = {
       name: "",
       users: [],

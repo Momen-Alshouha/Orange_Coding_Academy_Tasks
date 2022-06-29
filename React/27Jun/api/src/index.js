@@ -8,10 +8,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <h1>class component</h1>
-    <ClassComponent />
+    <ClassComponent name="name"/>
     <hr/>
     <h1>functional component</h1>
-    <FunctionalComponent />
+    <FunctionalComponent name="name" />
    
   </React.StrictMode>
 );

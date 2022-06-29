@@ -1,9 +1,11 @@
 import data from './MOCK_DATA';
 import {useState} from 'react'
 
-function FunctionalComponent() {
+function FunctionalComponent(props) {
+  
   const [search,setSearch] = useState('');
   return (
+    
     <div className="App">
       <input type="text" placeholder="search"  onChange={event => {setSearch(event.target.value)}} />
       {
@@ -15,7 +17,7 @@ function FunctionalComponent() {
           }
         }).map((val,key)=> {
           return <div>
-            <p>{val.first_name}</p>
+            <p>{val.first_name} {props.name}</p>
           </div>
         })
       }
