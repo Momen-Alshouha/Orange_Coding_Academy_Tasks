@@ -4,6 +4,7 @@ import "../App.css"
 import Home from './Home';
 import Contact from './Contact';
 import About from './About';
+import Single from './Single';
 
 function Nav () {
     return (
@@ -37,6 +38,7 @@ function Nav () {
                         <Route path='/' element={< Home />}></Route>
                         <Route path='/about' element={< About />}></Route>
                         <Route path='/contact' element={< Contact />}></Route>
+                        <Route path='/single/:id' element={< Single />}></Route>
                 </Routes>
                 </div>
             </Router>

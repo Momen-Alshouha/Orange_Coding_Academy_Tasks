@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function Home () {
 
@@ -35,6 +36,7 @@ function Home () {
                           <img height={"450px"} src={val.img} alt="" />
                           <p class="card-text">{val.status}</p>
                         </div>
+                            <a class="nav-link disabled"> <NavLink className='btn btn-primary' to={'/single/'+val.char_id}>Go To</NavLink></a>
                       </div>
                       <br />
                     </div>
