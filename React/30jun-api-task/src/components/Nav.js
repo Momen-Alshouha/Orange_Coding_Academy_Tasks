@@ -29,7 +29,7 @@ function Nav () {
                             <li class="nav-item">
                             <a class="nav-link disabled"> <NavLink to="/contact">Contact Us</NavLink></a>
                             </li>
-                        </ul>
+                        </ul> 
                         
                         </div>
                     </nav>
