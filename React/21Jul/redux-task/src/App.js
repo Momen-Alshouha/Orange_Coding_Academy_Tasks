@@ -26,7 +26,6 @@ render() {
 const mapStateToProps = state => {
   return { 
     balance: state.balance,
-    transactionHistory: state.transactionHistory
   }
 }
 
